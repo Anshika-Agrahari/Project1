@@ -71,12 +71,12 @@ resource "azurerm_linux_virtual_machine" "example" {
 }
 
 resource "azurerm_network_security_group" "example" {
-  name                = "AnshikaSG1"
+  name                = "AnshiSG1"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
 
   security_rule {
-    name                       = "test1234"
+    name                       = "test12345"
     priority                   = 100
     direction                  = "Inbound"
     access                     = "Allow"
