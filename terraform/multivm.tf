@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "example" {
   name     = var.rgname
-  location = "west-us"
+  location = "eastus2"
 }
 
 resource "azurerm_virtual_network" "example" {
