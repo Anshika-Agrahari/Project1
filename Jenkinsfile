@@ -30,7 +30,7 @@ pipeline {
       }
       stage('Run Ansible Playbook'){
         steps {
-          ansiblePlaybook credentialsId: 'ssh-student-key', disableHostKeyChecking: true, inventory: 'terraform/inventory', playbook: 'ansible/webserver.yaml', vaultTmpPath: '' 
+          ansiblePlaybook credentialsId: 'ssh-key', disableHostKeyChecking: true, inventory: 'terraform/inventory', playbook: 'ansible/webserver.yaml', vaultTmpPath: '' 
          }
       }
    }
