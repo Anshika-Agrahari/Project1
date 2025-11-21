@@ -10,5 +10,5 @@ variable "vmnum" {
 
 variable "rgname" {
   type = string
-  default = "Anshi"
+  default = "Anshirg"
 }
